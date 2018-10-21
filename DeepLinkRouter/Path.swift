@@ -32,5 +32,4 @@ open class PathGroup {
         self.groupPath = path
     }
     
-    
 }
