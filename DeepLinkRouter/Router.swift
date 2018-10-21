@@ -11,13 +11,20 @@ import Foundation
 
 open class Router {
     
-    var groupStack: [Path]
-    
-    init() {
-        self.groupStack = [Path(path: "")]
+    var groupStack: [Path]?
+    var pathStack: [Path]?
+
+    var host: String?
+    var path: String?
+
+    init(url: URL) {
+        self.host = url.host as String?
+        self.path = url.path as String?
     }
     
-    public func path(_ path: Path, _: () -> Void) {
-        
+    public func path(_ path: Path, _ f: () -> Void) {
+        if self.path == path.path {
+            f()
+        }
     }
 }

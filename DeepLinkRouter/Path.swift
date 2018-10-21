@@ -13,7 +13,24 @@ open class Path {
     
     var path: String?
     
-    init(path: String) {
+    var query: String?
+    
+    init(path: String, query: String) {
         self.path = path
+        self.query = query
     }
+}
+
+
+open class PathGroup {
+    
+    var pathStack: [Path]?
+    
+    let groupPath: String?
+    
+    init(path: String) {
+        self.groupPath = path
+    }
+    
+    
 }
