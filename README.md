@@ -5,6 +5,24 @@ DeepLinkRouter is deep link manager for Swift.
 
 ## Basic Usage
 
+First, you have to inherite `DeepLinkRouter` in `AppDelegate` class like below.
+
+```swift
+import UIKit
+
+...
+
+extension AppDelegate: DeepLinkRouter { }
+
+...
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+```
+
+And then, override `func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey :Any] = [:]) -> Bool` and register host & path like below.
+
 **`URL: your-app://host/path`**
 
 `ex. your-app://next/movie`
@@ -13,8 +31,6 @@ DeepLinkRouter is deep link manager for Swift.
 func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-    let router = Router(url: testURLInstance)
                 
     router.host("next",
       Path("movie", {
