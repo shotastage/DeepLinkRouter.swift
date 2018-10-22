@@ -34,9 +34,14 @@ open class PathGroup {
     var pathStack: [Path]?
     
     let groupPath: String?
+
     
-    init(path: String) {
+    init(_ path: String, _ pathStack: Path...) {
         self.groupPath = path
+        
+        for path in pathStack {
+            self.pathStack?.append(path)
+        }
     }
     
 }

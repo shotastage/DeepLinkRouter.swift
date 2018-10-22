@@ -10,9 +10,6 @@ import Foundation
 
 
 open class Router {
-    
-    var groupStack: [Path]?
-    var pathStack: [Path]?
 
     var host: String?
     var path: String?
