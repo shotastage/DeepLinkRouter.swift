@@ -22,8 +22,15 @@ open class Router {
         self.path = url.path as String?
     }
     
+    public func host(_ host: String, _ f: () -> Void) {
+        if self.host == host {
+            f()
+        }
+    }
+    
+    
     public func path(_ path: String, _ f: () -> Void) {
-        if self.path == path {
+        if self.path == "/\(path)" {
             f()
         }
     }
