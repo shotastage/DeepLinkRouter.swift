@@ -15,8 +15,8 @@ open class Router {
     var path: String?
 
     public init(from: URL) {
-        self.host = url.host as String?
-        self.path = url.path as String?
+        self.host = from.host as String?
+        self.path = from.path as String?
     }
     
     public func host(_ host: String, _ path: Path...) {
