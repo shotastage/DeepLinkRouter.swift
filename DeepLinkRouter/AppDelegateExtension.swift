@@ -36,15 +36,9 @@ extension DeepLinkRouter where Self: UIApplicationDelegate {
             objc_setAssociatedObject(self, &AssociatedKey.routerKey, newValue, .OBJC_ASSOCIATION_RETAIN)
         }
     }
-
     
-    func application(_ app: UIApplication,
-                     open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-    
+    func makeRouter(url: URL) {
         self.router = Router(url: url)
-
-        return true
     }
 
 }
