@@ -25,7 +25,7 @@ class DeepLinkRouterTests: XCTestCase {
         
         let testURLInstance = URL(string: "your-app://next/movie")!
         
-        let router = Router(url: testURLInstance)
+        let router = Router(from: testURLInstance)
                 
         router.host("next",
             Path("movie", {

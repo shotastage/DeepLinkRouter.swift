@@ -11,16 +11,17 @@ import Foundation
 
 open class Router {
 
-    var host: String?
-    var path: String?
+    var host: String
+    var path: String
 
     public init(from: URL) {
-        self.host = from.host as String?
-        self.path = from.path as String?
+        self.host = from.host!
+        self.path = from.path
     }
     
     public func host(_ host: String, _ path: Path...) {
-        if self.host == host {
+
+        if String(describing: self.host) == host {
             for f in path {
                 if self.path == "/\(String(describing: f.path))" {
                     f.execute()

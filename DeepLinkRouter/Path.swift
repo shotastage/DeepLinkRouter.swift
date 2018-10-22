@@ -11,13 +11,14 @@ import Foundation
 
 open class Path {
     
-    public let path: String?
+    public let path: String
     
-    public let query: String?
+    public let query: String
     
     public let action: () -> Void
     
-    public init(_ path: String, _ f: @escaping () -> Void, _ query: String? = nil) {
+    
+    public init(_ path: String, _ f: @escaping () -> Void, _ query: String = "") {
         self.path = path
         self.query = query
         self.action = f
