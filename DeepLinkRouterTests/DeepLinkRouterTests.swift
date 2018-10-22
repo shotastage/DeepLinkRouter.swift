@@ -23,6 +23,25 @@ class DeepLinkRouterTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testRouter() {
+        
+        let testURLInstance = URL(string: "your-app://open.with.launchcode/movie/")!
+        
+        let router = Router(url: testURLInstance)
+        
+        router.path("movie", {
+            NSLog("Movie is launched.")
+        })
+        
+        router.path("music", {
+            NSLog("Music is launched.")
+        })
+        
+        router.path("photo", {
+            NSLog("Photo is launched.")
+        })
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

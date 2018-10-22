@@ -22,8 +22,8 @@ open class Router {
         self.path = url.path as String?
     }
     
-    public func path(_ path: Path, _ f: () -> Void) {
-        if self.path == path.path {
+    public func path(_ path: String, _ f: () -> Void) {
+        if self.path == path {
             f()
         }
     }
