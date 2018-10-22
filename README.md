@@ -9,6 +9,7 @@ First, you have to inherite `DeepLinkRouter` in `AppDelegate` class like below.
 
 ```swift
 import UIKit
+import DeepLinkRouter
 
 ...
 
