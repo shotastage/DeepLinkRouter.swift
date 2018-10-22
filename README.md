@@ -31,7 +31,9 @@ And then, override `func application(_ app: UIApplication, open url: URL, option
 func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-                
+    
+    let router = Router(from: url)
+  
     router.host("next",
       Path("movie", {
         NSLog("Movie action detected.")  /// <-- This log will be displayed.
