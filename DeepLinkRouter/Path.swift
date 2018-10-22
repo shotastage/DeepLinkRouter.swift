@@ -11,13 +11,13 @@ import Foundation
 
 open class Path {
     
-    let path: String?
+    public let path: String?
     
-    let query: String?
+    public let query: String?
     
-    let action: () -> Void
+    public let action: () -> Void
     
-    init(_ path: String, _ f: @escaping () -> Void, _ query: String? = nil) {
+    public init(_ path: String, _ f: @escaping () -> Void, _ query: String? = nil) {
         self.path = path
         self.query = query
         self.action = f
@@ -31,12 +31,12 @@ open class Path {
 
 open class PathGroup {
     
-    var pathStack: [Path]?
+    public var pathStack: [Path]?
     
-    let groupPath: String?
+    public let groupPath: String?
 
     
-    init(_ path: String, _ pathStack: Path...) {
+    public init(_ path: String, _ pathStack: Path...) {
         self.groupPath = path
         
         for path in pathStack {
