@@ -37,8 +37,7 @@ extension DeepLinkRouter where Self: UIApplicationDelegate {
         }
     }
     
-    func makeRouter(url: URL) {
+    public func makeRouter(url: URL) {
         self.router = Router(url: url)
     }
-
 }
