@@ -14,7 +14,7 @@ open class Router {
     var host: String?
     var path: String?
 
-    public init(url: URL) {
+    public init(from: URL) {
         self.host = url.host as String?
         self.path = url.path as String?
     }
