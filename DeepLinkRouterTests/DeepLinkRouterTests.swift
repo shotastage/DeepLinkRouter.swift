@@ -26,16 +26,15 @@ class DeepLinkRouterTests: XCTestCase {
         let testURLInstance = URL(string: "your-app://next/movie")!
         
         let router = Router(url: testURLInstance)
-        
-        router.host("next", {
-            router.path("movie", {
-                NSLog("LOG: Movie is launched.")
+                
+        router.host("next",
+            Path("movie", {
+                NSLog("LOG: Movie action detected.")
+            }),
+            Path("photo", {
+                NSLog("LOG: Photo action detected.")
             })
-            
-            router.path("photo", {
-                NSLog("LOG: Other action is launched.")
-            })
-        })
+        )
     }
 
     func testPerformanceExample() {

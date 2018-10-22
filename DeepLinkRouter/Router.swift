@@ -22,16 +22,13 @@ open class Router {
         self.path = url.path as String?
     }
     
-    public func host(_ host: String, _ f: () -> Void) {
+    public func host(_ host: String, _ path: Path...) {
         if self.host == host {
-            f()
-        }
-    }
-    
-    
-    public func path(_ path: String, _ f: () -> Void) {
-        if self.path == "/\(path)" {
-            f()
+            for f in path {
+                if self.path == "/\(String(describing: f.path))" {
+                    f.execute()
+                }
+            }
         }
     }
 }
