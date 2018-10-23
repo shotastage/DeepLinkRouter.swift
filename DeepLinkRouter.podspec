@@ -10,10 +10,4 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/shotastage/DeepLinkRouter.git", :tag => "#{s.version}" }
   s.source_files = 'DeepLinkRouter/*.{swift, h, m}'
-
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
 end
