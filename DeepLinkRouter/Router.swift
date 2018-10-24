@@ -9,7 +9,7 @@
 import Foundation
 
 
-open class Router {
+open class Router: NSObject {
 
     var host: String
     var path: String

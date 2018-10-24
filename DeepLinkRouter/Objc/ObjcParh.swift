@@ -9,7 +9,7 @@
 import Foundation
 
 
-@objc
+@objc(DLPath)
 @available(swift, obsoleted: 99)
 open class DLPath: NSObject {
     
@@ -32,7 +32,7 @@ open class DLPath: NSObject {
 }
 
 
-@objc
+@objc(DLPathGroup)
 @available(swift, obsoleted: 99)
 open class DLPathGroup: NSObject {
     

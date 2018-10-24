@@ -9,7 +9,7 @@
 import Foundation
 
 
-@objc
+@objc(DLRouter)
 @available(swift, obsoleted: 99)
 open class DLRouter: NSObject {
     
