@@ -50,30 +50,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-                       
-    let router = Router(from: url)
-  
-    router.host("next",
-                Path("movie", {
-                    NSLog("Movie action detected.")  /// <-- This log will be displayed.
-                }),
-      
-                Path("photo", {
-                    NSLog("Photo action detected.")
-                })
-    )
-     
-    router.host("introduction",
-                Path("via_line", {
-                    NSLog("Go to reward page.")
-                }),
-      
-                Path("via_email", {
-                    NSLog("Go to reward page.")
-                })
-    )
 
-    return true
+        
+        let router = Router(from: url)
+        
+        router.host("next",
+                    Path("create", {
+                        print("CREATE ACTION")
+                    }),
+                    
+                    Path("view", {
+                        NSLog("Photo action detected.")
+                    })
+        )
+        
+        router.host("introduction",
+                    Path("via_line", {
+                        NSLog("Go to reward page.")
+                    }),
+                    
+                    Path("via_email", {
+                        NSLog("Go to reward page.")
+                    })
+        )
+
+        return true
 	}
 
 	...
