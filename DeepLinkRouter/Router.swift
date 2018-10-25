@@ -9,7 +9,7 @@
 import Foundation
 
 
-open class Router: NSObject {
+open class Router {
 
     var host: String
     var path: String
@@ -61,6 +61,12 @@ open class Router: NSObject {
         }
     }
     
+    
+    
+    /// Judge where given object is path or pathgroup
+    ///
+    /// - Parameter object: Generic
+    /// - Returns: PathObjects Enum
     private func decisionPathObject<T>(object: T) -> PathObjects {
         if String(describing: type(of: object)) == "Path" {
             return .path
