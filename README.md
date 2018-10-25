@@ -1,5 +1,6 @@
 # DeepLinkRouter
 
+[![Build Status](https://travis-ci.org/shotastage/DeepLinkRouter.svg?branch=master)](https://travis-ci.org/shotastage/DeepLinkRouter)
 [![Version](https://img.shields.io/cocoapods/v/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
 [![License](https://img.shields.io/cocoapods/l/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
 [![Platform](https://img.shields.io/cocoapods/p/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
