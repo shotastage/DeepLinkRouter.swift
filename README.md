@@ -45,13 +45,12 @@ import DeepLinkRouter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  ...
-	
-	func application(_ app: UIApplication,
+    ...
+    
+    func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-
-        
+    
         let router = Router(from: url)
         
         router.host("next",
@@ -75,9 +74,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
 
         return true
-	}
+    }
+    
+    ...
 
-	...
+
 }
 ```
 
