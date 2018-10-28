@@ -17,21 +17,34 @@ open class Router {
     
     var pathStack: [String]
     
+    var handlerStack: [() -> Void]
+    
     public init(from: URL) {
         self.host = from.host!
         self.path = from.path
         self.pathStack = []
+        self.handlerStack = []
     }
     
     public func register(path: String, _ f: @escaping () -> Void) -> Router {
+        
+        /// Add path to stack
         self.pathStack.append(path)
+        
+        /// Add handler to stack
+        self.handlerStack.append(f)
         return self
     }
     
     public func performRouter() {
-        print("Read all router")
-        for path in pathStack {
-            print(path)
+        
+        let givenLink: String = "\(host)\(path)"
+        
+        for (index, path) in pathStack.enumerated() {
+            
+            if path == givenLink {
+                handlerStack[index]()
+            }
         }
     }
 }

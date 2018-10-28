@@ -29,15 +29,15 @@ class DeepLinkRouterTests: XCTestCase {
                 
         router
             .register(path: "next/movie", {
-                print("Movie action has been launched!")
+                NSLog("LOG: Movie action has been launched!")
             })
         
             .register(path: "next/photo", {
-                print("Photo action has been launched!")
+                NSLog("LOG: Photo action has been launched!")
             })
         
             .register(path: "next/music", {
-                print("Music action has been launched!")
+                NSLog("LOG: Music action has been launched!")
             })
         
             .performRouter()
