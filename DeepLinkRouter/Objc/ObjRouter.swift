@@ -26,7 +26,7 @@ open class DLRouter: NSObject {
         if String(describing: self.host) == host {
             for f in path {
                 if self.path == "/\(String(describing: f.path))" {
-                    f.execute()
+                    //f.execute()
                 }
             }
         }
