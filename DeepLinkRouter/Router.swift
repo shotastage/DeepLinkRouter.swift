@@ -10,26 +10,28 @@ import Foundation
 
 
 open class Router {
-
+    
     var host: String
     
-    let path: String
+    var path: String
     
-    var pathStack: [Path]
-
+    var pathStack: [String]
     
     public init(from: URL) {
         self.host = from.host!
         self.path = from.path
         self.pathStack = []
     }
-
-    public func add(_ entry: String, _ f: @escaping (_ link: inout Router) -> Void) {
+    
+    public func register(path: String, _ f: @escaping () -> Void) -> Router {
+        self.pathStack.append(path)
+        return self
     }
     
-    public func path(_ entry: String, _ path: (_ add : Int) -> Void) {
-        self.pathStack.append(Path(entry))
-        
-        
+    public func performRouter() {
+        print("Read all router")
+        for path in pathStack {
+            print(path)
+        }
     }
 }
