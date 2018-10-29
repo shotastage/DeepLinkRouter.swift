@@ -52,26 +52,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
     
         let router = Router(from: url)
+                
+        router
+            .register(path: "next/movie", {
+                NSLog("LOG: Movie action has been launched!")
+            })
         
-        router.host("next",
-                    Path("create", {
-                        print("CREATE ACTION")
-                    }),
-                    
-                    Path("view", {
-                        NSLog("Photo action detected.")
-                    })
-        )
+            .register(path: "next/photo", {
+                NSLog("LOG: Photo action has been launched!")
+            })
         
-        router.host("introduction",
-                    Path("via_line", {
-                        NSLog("Go to reward page.")
-                    }),
-                    
-                    Path("via_email", {
-                        NSLog("Go to reward page.")
-                    })
-        )
+            .register(path: "next/music", {
+                NSLog("LOG: Music action has been launched!")
+            })
+        
+            .performRouter()
 
         return true
     }
