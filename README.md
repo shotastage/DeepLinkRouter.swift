@@ -22,7 +22,7 @@ pod 'DeepLinkRouter'
 **Carthage**
 
 ```
-github "shotastage/DeepLinkRouter" "0.0.1"
+github "shotastage/DeepLinkRouter" "0.0.3"
 ```
 
 
