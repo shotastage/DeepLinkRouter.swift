@@ -11,6 +11,7 @@
 		253D5CE6217C582F00486D19 /* DeepLinkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D5CE5217C582F00486D19 /* DeepLinkRouterTests.swift */; };
 		253D5CE8217C582F00486D19 /* DeepLinkRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 253D5CDA217C582E00486D19 /* DeepLinkRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		253D5CF2217C583B00486D19 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D5CF1217C583B00486D19 /* Router.swift */; };
+		2557A3382186EEEE00E2B53B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2557A3372186EEEE00E2B53B /* Routable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		253D5CE5217C582F00486D19 /* DeepLinkRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkRouterTests.swift; sourceTree = "<group>"; };
 		253D5CE7217C582F00486D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		253D5CF1217C583B00486D19 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2557A3372186EEEE00E2B53B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		25DB678D217ED6C100FF4C33 /* DeepLinkRouter-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepLinkRouter-Swift.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				25DB678D217ED6C100FF4C33 /* DeepLinkRouter-Swift.h */,
 				253D5CDB217C582E00486D19 /* Info.plist */,
 				253D5CF1217C583B00486D19 /* Router.swift */,
+				2557A3372186EEEE00E2B53B /* Routable.swift */,
 			);
 			path = DeepLinkRouter;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				253D5CF2217C583B00486D19 /* Router.swift in Sources */,
+				2557A3382186EEEE00E2B53B /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

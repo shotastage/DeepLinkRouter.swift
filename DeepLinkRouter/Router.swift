@@ -26,6 +26,13 @@ open class Router {
         self.handlerStack = []
     }
     
+    
+    /// Register path and action to router
+    ///
+    /// - Parameters:
+    ///   - path: URL path
+    ///   - f: Router action (closure)
+    /// - Returns: Router instance itself
     public func register(path: String, _ f: @escaping () -> Void) -> Router {
         
         /// Add path to stack
@@ -36,6 +43,8 @@ open class Router {
         return self
     }
     
+    
+    /// Assess given URL and registered path
     public func performRouter() {
         
         let givenLink: String = "\(host)\(path)"
