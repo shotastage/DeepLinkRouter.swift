@@ -15,6 +15,8 @@ open class Router {
     
     var path: String
     
+    var query: String
+    
     var pathStack: [String]
     
     var handlerStack: [() -> Void]
@@ -22,6 +24,7 @@ open class Router {
     public init(from: URL) {
         self.host = from.host!
         self.path = from.path
+        self.query = from.query!
         self.pathStack = []
         self.handlerStack = []
     }
@@ -40,6 +43,7 @@ open class Router {
         
         /// Add handler to stack
         self.handlerStack.append(f)
+        
         return self
     }
     

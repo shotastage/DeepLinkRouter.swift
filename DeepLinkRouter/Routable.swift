@@ -11,14 +11,35 @@ import Foundation
 
 public protocol Routable: class {
     
-    init(_ url: URL)
+    var host: String { get set }
+    
+    var path: String { get set }
+    
+    var query: String { get set }
+    
+    var pathStack: [String] { get set }
+    
+    var handlerStack: [() -> Void] { get set }
+    
+    init(from: URL)
     
     func perform() -> Bool
 }
 
 
 extension Routable {
-    func perform() -> Bool {
+    
+    public func perform() -> Bool {
+
+        let givenLink: String = "\(host)\(path)"
+        
+        for (index, path) in pathStack.enumerated() {
+            
+            if path == givenLink {
+                handlerStack[index]()
+            }
+        }
+
         return true
     }
 }
