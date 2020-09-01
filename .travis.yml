@@ -2,4 +2,4 @@ osx_image: xcode11
 language: objective-c
 xcode_project: DeepLinkRouter.xcodeproj
 xcode_scheme: DeepLinkRouter
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone XS
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11 Pro Max
