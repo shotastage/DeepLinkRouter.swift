@@ -9,7 +9,7 @@
 import Foundation
 
 
-public protocol Routable: class {
+public protocol Routable: AnyObject {
     
     var host: String { get set }
     
