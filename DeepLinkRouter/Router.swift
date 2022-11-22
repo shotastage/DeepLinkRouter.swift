@@ -49,7 +49,11 @@ open class Router {
     
     
     /// Assess given URL and registered path
-    public func performRouter() {
+
+    @available(*, unavailable, renamed: "perform")
+    public func performRouter() { }
+    
+    public func perform() {
         
         let givenLink: String = "\(host)\(path)"
         
