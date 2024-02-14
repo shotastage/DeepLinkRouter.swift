@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/shotastage/DeepLinkRouter.swift.svg?branch=master)](https://travis-ci.org/shotastage/DeepLinkRouter.swift)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/shotasatge/DeepLinkRouter.swift)
 [![Version](https://img.shields.io/cocoapods/v/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
-[![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org/)
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg)](https://swift.org/)
 [![License](https://img.shields.io/cocoapods/l/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
 [![Platform](https://img.shields.io/cocoapods/p/DeepLinkRouter.svg?style=flat)](http://cocoapods.org/pods/DeepLinkRouter)
 
