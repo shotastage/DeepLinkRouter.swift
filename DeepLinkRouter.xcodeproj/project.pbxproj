@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251E546D2CF0151300F41EFF /* RouterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E546C2CF0151000F41EFF /* RouterError.swift */; };
 		253D5CE1217C582F00486D19 /* DeepLinkRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253D5CD7217C582E00486D19 /* DeepLinkRouter.framework */; };
 		253D5CE6217C582F00486D19 /* DeepLinkRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D5CE5217C582F00486D19 /* DeepLinkRouterTests.swift */; };
 		253D5CE8217C582F00486D19 /* DeepLinkRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 253D5CDA217C582E00486D19 /* DeepLinkRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		251E546C2CF0151000F41EFF /* RouterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterError.swift; sourceTree = "<group>"; };
 		253D5CD7217C582E00486D19 /* DeepLinkRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepLinkRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		253D5CDA217C582E00486D19 /* DeepLinkRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeepLinkRouter.h; sourceTree = "<group>"; };
 		253D5CDB217C582E00486D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		253D5CD9217C582E00486D19 /* DeepLinkRouter */ = {
 			isa = PBXGroup;
 			children = (
+				251E546C2CF0151000F41EFF /* RouterError.swift */,
 				253D5CDA217C582E00486D19 /* DeepLinkRouter.h */,
 				25DB678D217ED6C100FF4C33 /* DeepLinkRouter-Swift.h */,
 				253D5CDB217C582E00486D19 /* Info.plist */,
@@ -205,6 +208,7 @@
 			files = (
 				253D5CF2217C583B00486D19 /* Router.swift in Sources */,
 				2557A3382186EEEE00E2B53B /* Routable.swift in Sources */,
+				251E546D2CF0151300F41EFF /* RouterError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
